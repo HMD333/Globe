@@ -1,0 +1,38 @@
+CREATE TABLE Admin(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    User_name VARCHAR(255) NOT NULL,
+    Password VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Auther(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    F_name VARCHAR(255) NOT NULL,
+    L_name VARCHAR(255) NOT NULL,
+    Faverat VARCHAR(255),
+    User_name VARCHAR(255) NOT NULL,
+    Password VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE User(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    F_name VARCHAR(255) NOT NULL,
+    L_name VARCHAR(255) NOT NULL,
+    Faverat VARCHAR(255),
+    User_name VARCHAR(255) NOT NULL,
+    Password VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE News(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    type VARCHAR(255) NOT NULL,
+    Title VARCHAR(255) NOT NULL,
+    SUP_title VARCHAR(255) NOT NULL,
+    Article TEXT NOT NULL,4
+    Img_path TEXT NOT NULL,
+    Date_Time DATETIME NOT NULL,
+    Au_type VARCHAR(255) NOT NULL,
+    Au_type_id INT NOT NULL
+);
